@@ -1,0 +1,45 @@
+<html>
+<head>
+<strong>Welcome To Maid Registration Page</strong>
+</head>
+<body>
+<br></br>
+
+<form method="POST" action="http://127.0.0.1:8000/maid-register">
+{% csrf_token %}
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter UserName</label>
+    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter First Name</label>
+    <input type="text" name="firstname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter Last Name</label>
+    <input type="text" name="lastname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter Contact Number</label>
+    <input type="text" name="contactnumber" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter Leaving District</label>
+    <input type="text" name="district" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter Leaving State</label>
+    <input type="text" name="state" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Enter Fees Per Month</label>
+    <input type="text" name="fees" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
